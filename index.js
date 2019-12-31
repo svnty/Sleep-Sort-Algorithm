@@ -13,14 +13,14 @@ const sleepSort = async (arr) => {
     pos.map((n) => new Promise((resolve) => {
       setTimeout(() => {
         resolve(sorted.push(n));
-      }, n <= 10 ? n * 10 : n);
+      }, n);
     }))
   );
   await Promise.all(
     neg.map((n) => new Promise((resolve) => {
       setTimeout(() => {
         resolve(sorted.unshift(n *= -1));
-      }, n <= 10 ? n * 10 : n);
+      }, n);
     }))
   );
   return sorted;
