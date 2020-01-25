@@ -1,4 +1,4 @@
-const sleepSort = async (arr) => {
+async function sleepSort(arr) => {
   const sorted = [];
   const neg = [];
   const pos = [];
